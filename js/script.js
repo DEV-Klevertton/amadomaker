@@ -6,5 +6,13 @@ $('.slider').slick({
   slidesToScroll: 1,
   variableWidth: false,
   prevArrow: $('.slick-prev'), // Define a seta de voltar
-  nextArrow: $('.slick-next')
+  nextArrow: $('.slick-next'),
+  responsive: [
+    {
+        breakpoint: 500,
+        settings: {
+            slidesToShow: 1
+        }
+    }
+]
 });
